@@ -78,9 +78,18 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
@@ -1522,7 +1531,7 @@
   },
   "timezone": "browser",
   "title": "Battery Health",
-  "uid": "jchmRiqUfXgTM",
+  "uid": "achpsdkU3agTM",
   "version": 10,
   "weekStart": ""
 }

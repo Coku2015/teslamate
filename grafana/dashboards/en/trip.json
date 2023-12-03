@@ -43,9 +43,18 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
@@ -2701,7 +2710,7 @@
   },
   "timezone": "",
   "title": "Trip",
-  "uid": "FkUpJpQZk",
+  "uid": "pswR726Vt",
   "version": 1,
   "weekStart": ""
 }

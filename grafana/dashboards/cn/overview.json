@@ -37,9 +37,18 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
@@ -85,6 +94,14 @@
               {
                 "color": "semi-dark-green",
                 "value": 20
+              },
+              {
+                "color": "semi-dark-yellow",
+                "value": 81
+              },
+              {
+                "color": "light-red",
+                "value": 91
               }
             ]
           },
@@ -136,7 +153,7 @@
           "where": []
         }
       ],
-      "title": "Battery Level",
+      "title": "电量",
       "type": "gauge"
     },
     {
@@ -214,7 +231,7 @@
           ]
         }
       ],
-      "title": "Charging Voltage",
+      "title": "充电电压",
       "type": "gauge"
     },
     {
@@ -226,7 +243,7 @@
           },
           "decimals": 0,
           "mappings": [],
-          "max": 170,
+          "max": 250,
           "min": 0,
           "thresholds": {
             "mode": "absolute",
@@ -291,7 +308,7 @@
           ]
         }
       ],
-      "title": "Charging kW",
+      "title": "充电度数",
       "type": "gauge"
     },
     {
@@ -359,8 +376,8 @@
       "links": [
         {
           "targetBlank": true,
-          "title": "Drive details",
-          "url": "/d/zm7wN6Zgz/drive-details?orgId=1"
+          "title": "Charge Level",
+          "url": "/d/WopVO_mgz"
         }
       ],
       "options": {
@@ -409,7 +426,7 @@
           ]
         }
       ],
-      "title": "Charge Level",
+      "title": "能量折线图",
       "type": "timeseries"
     },
     {
@@ -523,7 +540,7 @@
           ]
         }
       ],
-      "title": "Range",
+      "title": "剩余里程",
       "type": "stat"
     },
     {
@@ -620,7 +637,7 @@
           ]
         }
       ],
-      "title": "Net",
+      "title": "净能耗",
       "type": "stat"
     },
     {
@@ -717,7 +734,7 @@
           ]
         }
       ],
-      "title": "Gross",
+      "title": "总能耗",
       "type": "stat"
     },
     {
@@ -762,7 +779,7 @@
         {
           "targetBlank": true,
           "title": "Updates",
-          "url": "/d/IiC07mgWz/updates?orgId=1"
+          "url": "/d/IiC07mgWz/updates"
         }
       ],
       "maxDataPoints": 100,
@@ -816,7 +833,7 @@
           ]
         }
       ],
-      "title": "Firmware",
+      "title": "固件版本",
       "type": "stat"
     },
     {
@@ -874,7 +891,7 @@
         {
           "targetBlank": true,
           "title": "Mileage",
-          "url": "/d/NjtMTFggz/mileage?orgId=1"
+          "url": "/d/NjtMTFggz/mileage"
         }
       ],
       "maxDataPoints": 100,
@@ -926,7 +943,7 @@
           ]
         }
       ],
-      "title": "Odometer",
+      "title": "里程表",
       "type": "stat"
     },
     {
@@ -989,7 +1006,7 @@
             "properties": [
               {
                 "id": "min",
-                "value": 0
+                "value": "充电电压"
               },
               {
                 "id": "max",
@@ -1005,7 +1022,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Power"
+                "value": "能量"
               },
               {
                 "id": "unit",
@@ -1025,7 +1042,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Battery heater"
+                "value": "电池加热"
               },
               {
                 "id": "custom.axisPlacement",
@@ -1045,7 +1062,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Current"
+                "value": "电流"
               },
               {
                 "id": "unit",
@@ -1065,7 +1082,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Energy added"
+                "value": "已充电量"
               },
               {
                 "id": "unit",
@@ -1085,8 +1102,8 @@
       "links": [
         {
           "targetBlank": true,
-          "title": "Charging Details",
-          "url": "/d/BHhxFeZRz/charge-details?orgId=1"
+          "title": "充电详情",
+          "url": "/d/BHhxFeZRz/charge-details"
         }
       ],
       "options": {
@@ -1164,7 +1181,7 @@
           ]
         }
       ],
-      "title": "Charging Details",
+      "title": "充电详情",
       "type": "timeseries"
     },
     {
@@ -1241,7 +1258,7 @@
           ]
         }
       ],
-      "title": "Driver Temp",
+      "title": "驾驶舱温度",
       "type": "gauge"
     },
     {
@@ -1318,7 +1335,7 @@
           ]
         }
       ],
-      "title": "Outside Temp",
+      "title": "车外温度",
       "type": "gauge"
     },
     {
@@ -1395,7 +1412,7 @@
           ]
         }
       ],
-      "title": "Inside Temp",
+      "title": "车内温度",
       "type": "gauge"
     },
     {
@@ -1481,7 +1498,7 @@
       "id": 20,
       "links": [
         {
-          "title": "States",
+          "title": "状态",
           "url": "/d/xo4BNRkZz/states"
         }
       ],
@@ -1529,7 +1546,7 @@
           ]
         }
       ],
-      "title": "States",
+      "title": "状态",
       "type": "state-timeline"
     }
   ],
@@ -1537,7 +1554,7 @@
   "schemaVersion": 36,
   "style": "dark",
   "tags": [
-    "tesla"
+    "tesla_zhCN"
   ],
   "templating": {
     "list": [
@@ -1692,8 +1709,8 @@
     ]
   },
   "timezone": "",
-  "title": "Overview - LFP",
-  "uid": "EVzVGnwSq",
+  "title": "概览",
+  "uid": "kOuP_Fggz",
   "version": 1,
   "weekStart": ""
 }

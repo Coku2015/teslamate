@@ -41,10 +41,24 @@
       "includeVars": false,
       "keepTime": false,
       "tags": [
+        "tesla_zhCN"
+      ],
+      "targetBlank": false,
+      "title": "Dashboards_CN",
+      "tooltip": "",
+      "type": "dashboards",
+      "url": ""
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [
         "tesla"
       ],
       "targetBlank": false,
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "tooltip": "",
       "type": "dashboards",
       "url": ""
@@ -100,7 +114,7 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "dateTimeAsLocal"
+                "value": "开始时间"
               },
               {
                 "id": "custom.width",
@@ -142,7 +156,7 @@
             "properties": [
               {
                 "id": "custom.width",
-                "value": 70
+                "value": "SoC差"
               },
               {
                 "id": "unit",
@@ -182,7 +196,7 @@
             "properties": [
               {
                 "id": "custom.width",
-                "value": 100
+                "value": "状态"
               },
               {
                 "id": "custom.filterable",
@@ -198,7 +212,7 @@
             "properties": [
               {
                 "id": "custom.width",
-                "value": 100
+                "value": "耗电量"
               },
               {
                 "id": "unit",
@@ -218,7 +232,7 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "dateTimeAsLocal"
+                "value": "结束时间"
               },
               {
                 "id": "custom.width",
@@ -234,7 +248,7 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "m"
+                "value": "持续时间"
               },
               {
                 "id": "custom.width",
@@ -250,13 +264,7 @@
             "properties": [
               {
                 "id": "links",
-                "value": [
-                  {
-                    "targetBlank": true,
-                    "title": "Create or edit geo-fence",
-                    "url": "[[base_url:raw]]/geo-fences/${__data.fields.start_path:raw}"
-                  }
-                ]
+                "value": "出发地"
               },
               {
                 "id": "custom.filterable",
@@ -276,13 +284,7 @@
             "properties": [
               {
                 "id": "links",
-                "value": [
-                  {
-                    "targetBlank": true,
-                    "title": "Create or edit geo-fence",
-                    "url": "[[base_url:raw]]/geo-fences/${__data.fields.end_path:raw}"
-                  }
-                ]
+                "value": "目的地"
               },
               {
                 "id": "custom.filterable",
@@ -386,7 +388,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Odometer"
+                "value": "里程表"
               },
               {
                 "id": "custom.width",
@@ -402,7 +404,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Distance"
+                "value": "距离"
               },
               {
                 "id": "custom.width",
@@ -422,7 +424,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Range Diff"
+                "value": "续航差值"
               },
               {
                 "id": "custom.width",
@@ -442,7 +444,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Temperature"
+                "value": "温度"
               },
               {
                 "id": "custom.width",
@@ -462,7 +464,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Range"
+                "value": "续航里程"
               },
               {
                 "id": "custom.width",
@@ -568,7 +570,7 @@
           ]
         }
       ],
-      "title": "Timeline",
+      "title": "时间线",
       "transformations": [
         {
           "id": "organize",
@@ -627,7 +629,7 @@
   "schemaVersion": 36,
   "style": "dark",
   "tags": [
-    "tesla"
+    "tesla_zhCN"
   ],
   "templating": {
     "list": [
@@ -690,38 +692,38 @@
         },
         "hide": 0,
         "includeAll": true,
-        "label": "Action",
+        "label": "状态",
         "multi": true,
         "name": "action_filter",
         "options": [
           {
             "selected": true,
-            "text": "All",
+            "text": "所有",
             "value": "$__all"
           },
           {
             "selected": false,
-            "text": "🚗 Driving",
+            "text": "🚗 行驶中",
             "value": "🚗 Driving"
           },
           {
             "selected": false,
-            "text": "🔋 Charging",
+            "text": "🔋 充电中",
             "value": "🔋 Charging"
           },
           {
             "selected": false,
-            "text": "🅿️ Parking",
+            "text": "🅿️ 停车",
             "value": "🅿️ Parking"
           },
           {
             "selected": false,
-            "text": "❓ Missing",
+            "text": "❓ 丢失状态",
             "value": "❓ Missing"
           },
           {
             "selected": false,
-            "text": "💾 Updating",
+            "text": "💾 更新中",
             "value": "💾 Updating"
           }
         ],
@@ -829,7 +831,7 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Timeline",
+  "title": "时间线",
   "uid": "SUBgwtigz",
   "version": 1,
   "weekStart": ""

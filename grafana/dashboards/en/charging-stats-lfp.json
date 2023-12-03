@@ -36,9 +36,18 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
@@ -1974,7 +1983,7 @@
   },
   "timezone": "",
   "title": "Charging Stats - LFP",
-  "uid": "UcjFKmUtpt",
+  "uid": "fwk2HBkyjn",
   "version": 1,
   "weekStart": ""
 }

@@ -36,9 +36,18 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
@@ -1008,7 +1017,7 @@
   },
   "timezone": "",
   "title": "Drives",
-  "uid": "Y8upc6ZRk",
+  "uid": "6gvPX7HW4",
   "version": 1,
   "weekStart": ""
 }

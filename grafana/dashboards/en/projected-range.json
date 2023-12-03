@@ -41,9 +41,18 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
@@ -794,7 +803,7 @@
   },
   "timezone": "",
   "title": "Projected Range",
-  "uid": "riqUfXgRz",
+  "uid": "KV75ZD9kC",
   "version": 1,
   "weekStart": ""
 }

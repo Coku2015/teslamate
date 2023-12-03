@@ -21,7 +21,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "iteration": 1656100778202,
+  "iteration": 1656100496202,
   "links": [
     {
       "icon": "dashboard",
@@ -35,15 +35,25 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
   "liveNow": false,
   "panels": [
     {
+      "collapsed": false,
       "datasource": "TeslaMate",
       "gridPos": {
         "h": 1,
@@ -65,11 +75,11 @@
             "mode": "palette-classic"
           },
           "custom": {
-            "axisLabel": "",
+            "axisLabel": "能量百分比",
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
-            "fillOpacity": 20,
+            "fillOpacity": 10,
             "gradientMode": "opacity",
             "hideFrom": {
               "legend": false,
@@ -89,12 +99,14 @@
               "mode": "none"
             },
             "thresholdsStyle": {
-              "mode": "off"
+              "mode": "line"
             }
           },
           "decimals": 0,
           "links": [],
           "mappings": [],
+          "max": 100,
+          "min": 0,
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -103,51 +115,18 @@
                 "value": null
               },
               {
-                "color": "red",
+                "color": "transparent",
+                "value": 20
+              },
+              {
+                "color": "green",
                 "value": 80
               }
             ]
           },
-          "unit": "short"
+          "unit": "percent"
         },
-        "overrides": [
-          {
-            "matcher": {
-              "id": "byRegexp",
-              "options": ".*_km$"
-            },
-            "properties": [
-              {
-                "id": "unit",
-                "value": "km"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byRegexp",
-              "options": ".*_mi$"
-            },
-            "properties": [
-              {
-                "id": "unit",
-                "value": "mi"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byRegexp",
-              "options": "mileage_.*"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "Mileage"
-              }
-            ]
-          }
-        ]
+        "overrides": []
       },
       "gridPos": {
         "h": 21,
@@ -160,8 +139,9 @@
       "options": {
         "legend": {
           "calcs": [
-            "min",
-            "max"
+            "mean",
+            "max",
+            "min"
           ],
           "displayMode": "table",
           "placement": "bottom"
@@ -181,7 +161,7 @@
           "hide": false,
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "WITH o AS (SELECT\n  start_date AS time,\n  car_id,\n  start_km  AS \"odometer\"\nFROM drives\nUNION ALL\nSELECT\n  end_date,\n  car_id,\n  end_km AS \"odometer\"\nFROM drives)\n\nSELECT\n  time, \n  convert_km(odometer::numeric, '$length_unit') as mileage_$length_unit\nFROM o\nWHERE\n\tcar_id = $car_id AND\n\t$__timeFilter(time)\norder by 1;",
+          "rawSql": "SELECT\n\t$__time(date),\n\tbattery_level AS \"Battery Level\",\n\tusable_battery_level AS \"Usable Battery Level\"\nfrom positions\n\tWHERE $__timeFilter(date) AND car_id = $car_id\n\tORDER BY Time ASC\n;",
           "refId": "A",
           "select": [
             [
@@ -203,7 +183,7 @@
           ]
         }
       ],
-      "title": "Mileage",
+      "title": "能量折线图",
       "type": "timeseries"
     }
   ],
@@ -211,7 +191,7 @@
   "schemaVersion": 36,
   "style": "dark",
   "tags": [
-    "tesla"
+    "tesla_zhCN"
   ],
   "templating": {
     "list": [
@@ -230,30 +210,6 @@
         "name": "car_id",
         "options": [],
         "query": "SELECT name AS __text, id AS __value FROM cars ORDER BY display_priority ASC, name ASC;",
-        "refresh": 1,
-        "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
-        "tagValuesQuery": "",
-        "tagsQuery": "",
-        "type": "query",
-        "useTags": false
-      },
-      {
-        "current": {
-          "selected": false,
-          "text": "km",
-          "value": "km"
-        },
-        "datasource": "TeslaMate",
-        "definition": "select unit_of_length from settings limit 1;",
-        "hide": 2,
-        "includeAll": false,
-        "label": "",
-        "multi": false,
-        "name": "length_unit",
-        "options": [],
-        "query": "select unit_of_length from settings limit 1;",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -290,7 +246,7 @@
     ]
   },
   "time": {
-    "from": "now-6M",
+    "from": "now-7d",
     "to": "now"
   },
   "timepicker": {
@@ -319,8 +275,8 @@
     ]
   },
   "timezone": "",
-  "title": "Mileage",
-  "uid": "NjtMTFggz",
+  "title": "能量折线图",
+  "uid": "WopVO_mgz",
   "version": 1,
   "weekStart": ""
 }

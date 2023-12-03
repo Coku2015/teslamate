@@ -34,9 +34,18 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
@@ -977,7 +986,7 @@
   },
   "timezone": "browser",
   "title": "Statistics",
-  "uid": "1EZnXszMk",
+  "uid": "9wvcU5sR3",
   "version": 1,
   "weekStart": ""
 }

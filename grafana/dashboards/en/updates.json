@@ -36,9 +36,18 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
@@ -733,7 +742,7 @@
   },
   "timezone": "",
   "title": "Updates",
-  "uid": "IiC07mgWz",
+  "uid": "5kNpT7J9F",
   "version": 1,
   "weekStart": ""
 }

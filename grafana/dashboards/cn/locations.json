@@ -35,9 +35,18 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
@@ -120,7 +129,7 @@
           ]
         }
       ],
-      "title": "Total addresses",
+      "title": "总地址数",
       "type": "stat"
     },
     {
@@ -200,7 +209,7 @@
           ]
         }
       ],
-      "title": "Cities",
+      "title": "城市",
       "type": "stat"
     },
     {
@@ -280,7 +289,7 @@
           ]
         }
       ],
-      "title": "States",
+      "title": "省",
       "type": "stat"
     },
     {
@@ -360,7 +369,7 @@
           ]
         }
       ],
-      "title": "Countries",
+      "title": "国家",
       "type": "stat"
     },
     {
@@ -437,7 +446,7 @@
           ]
         }
       ],
-      "title": "Cities",
+      "title": "城市",
       "type": "bargauge"
     },
     {
@@ -516,7 +525,7 @@
           ]
         }
       ],
-      "title": "States",
+      "title": "省",
       "type": "bargauge"
     },
     {
@@ -597,7 +606,7 @@
         "sortBy": [
           {
             "desc": true,
-            "displayName": "Date"
+            "displayName": "日期时间"
           }
         ]
       },
@@ -632,7 +641,7 @@
           ]
         }
       ],
-      "title": "Last visited",
+      "title": "足迹",
       "transformations": [
         {
           "id": "organize",
@@ -703,7 +712,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Name"
+                "value": "路名"
               },
               {
                 "id": "unit",
@@ -736,7 +745,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Neighbourhood"
+                "value": "社区街道"
               },
               {
                 "id": "unit",
@@ -759,7 +768,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "City"
+                "value": "城市"
               },
               {
                 "id": "unit",
@@ -782,7 +791,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "State"
+                "value": "省"
               },
               {
                 "id": "unit",
@@ -805,7 +814,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Country"
+                "value": "国家"
               },
               {
                 "id": "unit",
@@ -886,7 +895,7 @@
           ]
         }
       ],
-      "title": "Addresses",
+      "title": "地点",
       "transformations": [
         {
           "id": "merge",
@@ -934,7 +943,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Time"
+                "value": "时间"
               },
               {
                 "id": "unit",
@@ -953,7 +962,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Name"
+                "value": "名称"
               },
               {
                 "id": "unit",
@@ -1041,7 +1050,7 @@
           ]
         }
       ],
-      "title": "Geo-fences",
+      "title": "收藏点",
       "transformations": [
         {
           "id": "merge",
@@ -1056,7 +1065,7 @@
   "schemaVersion": 36,
   "style": "dark",
   "tags": [
-    "tesla"
+    "tesla_zhCN"
   ],
   "templating": {
     "list": [
@@ -1165,7 +1174,7 @@
     ]
   },
   "timezone": "",
-  "title": "Locations",
+  "title": "地点",
   "uid": "ZzhF-aRWz",
   "version": 1,
   "weekStart": ""

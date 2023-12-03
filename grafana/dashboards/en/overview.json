@@ -37,9 +37,18 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
@@ -1701,7 +1710,7 @@
   },
   "timezone": "",
   "title": "Overview",
-  "uid": "kOuP_Fggz",
+  "uid": "36SyW9c8n",
   "version": 1,
   "weekStart": ""
 }

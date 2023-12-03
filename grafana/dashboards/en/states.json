@@ -36,9 +36,18 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
@@ -526,7 +535,7 @@
   },
   "timezone": "",
   "title": "States",
-  "uid": "xo4BNRkZz",
+  "uid": "Gb63GJwZ5",
   "version": 1,
   "weekStart": ""
 }

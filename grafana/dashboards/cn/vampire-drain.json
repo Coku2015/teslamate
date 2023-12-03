@@ -35,9 +35,18 @@
       "asDropdown": true,
       "icon": "external link",
       "tags": [
+        "tesla_zhCN"
+      ],
+      "title": "Dashboards_CN",
+      "type": "dashboards"
+    },
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "Dashboards_EN",
       "type": "dashboards"
     }
   ],
@@ -92,7 +101,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Start"
+                "value": "起始时间"
               },
               {
                 "id": "unit",
@@ -125,7 +134,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "End"
+                "value": "结束时间"
               },
               {
                 "id": "unit",
@@ -148,7 +157,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "TR Loss"
+                "value": "续航损失"
               },
               {
                 "id": "unit",
@@ -175,7 +184,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Period"
+                "value": "历时"
               },
               {
                 "id": "unit",
@@ -222,7 +231,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "TR Loss / h"
+                "value": "每小时续航损失"
               },
               {
                 "id": "unit",
@@ -272,7 +281,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Standby"
+                "value": "待机"
               },
               {
                 "id": "unit",
@@ -323,7 +332,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "kWh"
+                "value": "电量"
               },
               {
                 "id": "unit",
@@ -350,7 +359,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Ø-Power"
+                "value": "平均损失功率"
               },
               {
                 "id": "unit",
@@ -377,7 +386,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "TR Loss / h"
+                "value": "每小时续航损失"
               },
               {
                 "id": "unit",
@@ -404,7 +413,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "TR Loss"
+                "value": "续航损失"
               },
               {
                 "id": "unit",
@@ -547,7 +556,7 @@
         }
       ],
       "datasource": "TeslaMate",
-      "title": "Vampire Drain",
+      "title": "电池吸血鬼",
       "transformations": [
         {
           "id": "merge",
@@ -562,7 +571,7 @@
   "schemaVersion": 36,
   "style": "dark",
   "tags": [
-    "tesla"
+    "tesla_zhCN"
   ],
   "templating": {
     "list": [
@@ -598,7 +607,7 @@
         },
         "hide": 0,
         "includeAll": false,
-        "label": "min. Idle Time (h)",
+        "label": "最小闲置时间 (h)",
         "multi": false,
         "name": "duration",
         "options": [
@@ -745,7 +754,7 @@
     ]
   },
   "timezone": "",
-  "title": "Vampire Drain",
+  "title": "电池吸血鬼",
   "uid": "zhHx2Fggk",
   "version": 1,
   "weekStart": ""
