@@ -113,8 +113,12 @@
             },
             "properties": [
               {
-                "id": "unit",
+                "id": "displayName",
                 "value": "开始时间"
+              },
+              {
+                "id": "unit",
+                "value": "dateTimeAsLocal"
               },
               {
                 "id": "custom.width",
@@ -155,8 +159,12 @@
             },
             "properties": [
               {
-                "id": "custom.width",
+                "id": "displayName",
                 "value": "SoC差"
+              },
+              {
+                "id": "custom.width",
+                "value": "70"
               },
               {
                 "id": "unit",
@@ -195,8 +203,12 @@
             },
             "properties": [
               {
-                "id": "custom.width",
+                "id": "displayName",
                 "value": "状态"
+              },
+              {
+                "id": "custom.width",
+                "value": "100"
               },
               {
                 "id": "custom.filterable",
@@ -211,8 +223,12 @@
             },
             "properties": [
               {
-                "id": "custom.width",
+                "id": "displayName",
                 "value": "耗电量"
+              },
+              {
+                "id": "custom.width",
+                "value": "100"
               },
               {
                 "id": "unit",
@@ -231,8 +247,12 @@
             },
             "properties": [
               {
-                "id": "unit",
+                "id": "displayName",
                 "value": "结束时间"
+              },
+              {
+                "id": "unit",
+                "value": "dateTimeAsLocal"
               },
               {
                 "id": "custom.width",
@@ -247,8 +267,12 @@
             },
             "properties": [
               {
-                "id": "unit",
+                "id": "displayName",
                 "value": "持续时间"
+              },
+              {
+                "id": "unit",
+                "value": "m"
               },
               {
                 "id": "custom.width",
@@ -263,8 +287,18 @@
             },
             "properties": [
               {
-                "id": "links",
+                "id": "displayName",
                 "value": "出发地"
+              },
+              {
+                "id": "links",
+                "value": [
+                  {
+                    "targetBlank": true,
+                    "title": "创建或编辑收藏点",
+                    "url": "[[base_url:raw]]/geo-fences/${__data.fields.start_path:raw}"
+                  }
+                ]
               },
               {
                 "id": "custom.filterable",
@@ -283,8 +317,18 @@
             },
             "properties": [
               {
-                "id": "links",
+                "id": "displayName",
                 "value": "目的地"
+              },
+              {
+                "id": "links",
+                "value": [
+                  {
+                    "targetBlank": true,
+                    "title": "创建或编辑收藏点",
+                    "url": "[[base_url:raw]]/geo-fences/${__data.fields.end_path:raw}"
+                  }
+                ]
               },
               {
                 "id": "custom.filterable",

@@ -100,7 +100,7 @@
         "type": "postgres",
         "uid": "TeslaMate"
       },
-      "description": "**Usable (now)** is the estimated current battery capacity. \n\n**Usable (new)** is the estimated Battery Capacity since you begun to use Teslamate. That's why, the more data you have logged from your brand new car the better. ",
+      "description": "**可用电量 (现在)** 是当前估算的电池容量。 \n\n**可用电量 (新车)** 是自从您开始使用Teslamate，系统估算的电池容量。 这也是为什么越早记录数据信息越准确的原因。",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -177,7 +177,7 @@
           ]
         }
       ],
-      "title": "Battery Capacity",
+      "title": "电池容量",
       "type": "stat"
     },
     {
@@ -236,7 +236,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Max range (new)"
+                "value": "最大里程 (新车)"
               }
             ]
           },
@@ -248,7 +248,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Max range (now)"
+                "value": "最大里程 (现在)"
               }
             ]
           },
@@ -260,7 +260,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Range lost"
+                "value": "里程损失"
               }
             ]
           }
@@ -322,7 +322,7 @@
           ]
         }
       ],
-      "title": "Ranges",
+      "title": "里程",
       "type": "stat"
     },
     {
@@ -439,7 +439,7 @@
           ]
         }
       ],
-      "title": "Mileage",
+      "title": "里程表",
       "type": "stat"
     },
     {
@@ -572,7 +572,7 @@
           ]
         }
       ],
-      "title": "Battery Stats",
+      "title": "电池状态",
       "type": "stat"
     },
     {
@@ -580,7 +580,7 @@
         "type": "postgres",
         "uid": "TeslaMate"
       },
-      "description": "This dashboard is meant to have a look of the Battery health based on the data logged in Teslamate. So, the more data you have logged from your brand new car the better.\n\n**Degradation** is just an estimated value to have a reference, measured on **usable battery level** of every charging session with enough kWh added (in order to avoid dirty data form the sample), calculated according to the rated efficiency of the car.",
+      "description": "这个仪表盘的意思是基于Teslamate记录的数据评估的电池健康度。因此从新车开始记录的数据越多内容越准确。\n\n衰减只是一个估计值，仅用于参考，根据车辆的额定效率，通过每次充电过程中可用电池电量的测量来计算，确保充入足够的电量（以避免样本中的不准确数据）。",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -667,7 +667,7 @@
           ]
         }
       ],
-      "title": "Estimated Degradation",
+      "title": "预估衰减",
       "type": "gauge"
     },
     {
@@ -762,7 +762,7 @@
           ]
         }
       ],
-      "title": "Battery Health",
+      "title": "电池健康",
       "type": "bargauge"
     },
     {
@@ -770,7 +770,7 @@
         "type": "postgres",
         "uid": "TeslaMate"
       },
-      "description": "Estimated charging cycles are based on the whole energy added to the battery. So the more data you logged the better. \n",
+      "description": "预估的充电周期是基于向电池充入的总能量。因此，您记录的数据越多，结果就越准确。\n",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -845,7 +845,7 @@
           ]
         }
       ],
-      "title": "Charges",
+      "title": "充电",
       "type": "stat"
     },
     {
@@ -969,7 +969,7 @@
           ]
         }
       ],
-      "title": "Summary AC/DC Energy Added",
+      "title": "交流/直流 充电摘要",
       "type": "piechart"
     },
     {
@@ -1078,7 +1078,7 @@
           ]
         }
       ],
-      "title": "Current SOC",
+      "title": "当前 SOC",
       "type": "bargauge"
     },
     {
@@ -1195,7 +1195,7 @@
           ]
         }
       ],
-      "title": "Current Capacity",
+      "title": "当前容量",
       "type": "bargauge"
     },
     {
@@ -1364,7 +1364,7 @@
           ]
         }
       ],
-      "title": "Battery Capacity by Mileage",
+      "title": "电池容量 - 按里程表",
       "type": "xychart"
     }
   ],
@@ -1470,9 +1470,9 @@
           "text": "0",
           "value": "0"
         },
-        "description": "Set the capacity of your car battery when it was new, in case you started using Teslamate after a while of having it. If not, leave it at 0, it will be calculated with the data that is logged in Teslamate",
+        "description": "如果您是购买新车时就通过Teslamate记录数据，请保持默认设置为0，健康度将根据Teslamate中记录的数据进行计算；如果您是在使用了一段时间车辆后才使用Teslamate记录数据，请设置您的车辆电池初始容量，健康度将根据您设置的初始容量进行计算。",
         "hide": 0,
-        "label": "Custom Battery Capacity (kWh) when new",
+        "label": "自定义新车电池容量(度)",
         "name": "custom_kwh_new",
         "options": [
           {
@@ -1491,9 +1491,9 @@
           "text": "0",
           "value": "0"
         },
-        "description": "Set the max range to 100% of your car when it was new, in case you started using Teslamate after a while of having it. If not, leave it at 0, the degradation will be calculated with the data that is logged in Teslamate",
+        "description": "如果您是购买新车时就通过Teslamate记录数据，请保持默认设置为0，健康度将根据Teslamate中记录的数据进行计算；如果您是在使用了一段时间车辆后才使用Teslamate记录数据，请设置您的车辆出厂续航里程，健康度将根据您设置的初始里程进行计算。",
         "hide": 0,
-        "label": "Custom Max Range when new",
+        "label": "自定义新车最大续航里程",
         "name": "custom_max_range",
         "options": [
           {
@@ -1514,7 +1514,7 @@
     "refresh_intervals": []
   },
   "timezone": "browser",
-  "title": "Battery Health - LFP",
+  "title": "电池健康度 - 磷酸铁锂",
   "uid": "DuertWeceu",
   "version": 7,
   "weekStart": ""

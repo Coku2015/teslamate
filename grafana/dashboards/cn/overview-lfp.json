@@ -145,7 +145,7 @@
           "where": []
         }
       ],
-      "title": "Battery Level",
+      "title": "电量",
       "type": "gauge"
     },
     {
@@ -223,7 +223,7 @@
           ]
         }
       ],
-      "title": "Charging Voltage",
+      "title": "充电电压",
       "type": "gauge"
     },
     {
@@ -300,7 +300,7 @@
           ]
         }
       ],
-      "title": "Charging kW",
+      "title": "充电度数",
       "type": "gauge"
     },
     {
@@ -418,7 +418,7 @@
           ]
         }
       ],
-      "title": "Charge Level",
+      "title": "能量折线图",
       "type": "timeseries"
     },
     {
@@ -532,7 +532,7 @@
           ]
         }
       ],
-      "title": "Range",
+      "title": "剩余里程",
       "type": "stat"
     },
     {
@@ -629,7 +629,7 @@
           ]
         }
       ],
-      "title": "Net",
+      "title": "净能耗",
       "type": "stat"
     },
     {
@@ -726,7 +726,7 @@
           ]
         }
       ],
-      "title": "Gross",
+      "title": "总能耗",
       "type": "stat"
     },
     {
@@ -825,7 +825,7 @@
           ]
         }
       ],
-      "title": "Firmware",
+      "title": "固件版本",
       "type": "stat"
     },
     {
@@ -935,7 +935,7 @@
           ]
         }
       ],
-      "title": "Odometer",
+      "title": "里程表",
       "type": "stat"
     },
     {
@@ -997,6 +997,10 @@
             },
             "properties": [
               {
+                "id": "displayName",
+                "value": "充电电压"
+              },
+              {
                 "id": "min",
                 "value": 0
               },
@@ -1014,7 +1018,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Power"
+                "value": "能量"
               },
               {
                 "id": "unit",
@@ -1034,7 +1038,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Battery heater"
+                "value": "电池加热"
               },
               {
                 "id": "custom.axisPlacement",
@@ -1054,7 +1058,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Current"
+                "value": "电流"
               },
               {
                 "id": "unit",
@@ -1074,7 +1078,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Energy added"
+                "value": "已充电量"
               },
               {
                 "id": "unit",
@@ -1094,7 +1098,7 @@
       "links": [
         {
           "targetBlank": true,
-          "title": "Charging Details",
+          "title": "充电详情",
           "url": "/d/BHhxFeZRz/charge-details?orgId=1"
         }
       ],
@@ -1173,7 +1177,7 @@
           ]
         }
       ],
-      "title": "Charging Details",
+      "title": "充电详情",
       "type": "timeseries"
     },
     {
@@ -1250,7 +1254,7 @@
           ]
         }
       ],
-      "title": "Driver Temp",
+      "title": "驾驶舱温度",
       "type": "gauge"
     },
     {
@@ -1327,7 +1331,7 @@
           ]
         }
       ],
-      "title": "Outside Temp",
+      "title": "车外温度",
       "type": "gauge"
     },
     {
@@ -1404,7 +1408,7 @@
           ]
         }
       ],
-      "title": "Inside Temp",
+      "title": "车内温度",
       "type": "gauge"
     },
     {
@@ -1425,41 +1429,41 @@
                 "0": {
                   "color": "#6ED0E0",
                   "index": 0,
-                  "text": "online"
+                  "text": "在线"
                 },
                 "1": {
                   "color": "#8F3BB8",
                   "index": 1,
-                  "text": "driving"
+                  "text": "行驶中"
                 },
                 "2": {
                   "color": "#F2CC0C",
                   "index": 2,
-                  "text": "charging"
+                  "text": "充电中"
                 },
                 "3": {
                   "color": "#FFB357",
                   "index": 3,
-                  "text": "offline"
+                  "text": "离线"
                 },
                 "4": {
                   "color": "#56A64B",
                   "index": 4,
-                  "text": "asleep"
+                  "text": "休眠中"
                 },
                 "5": {
                   "color": "#6ED0E0",
                   "index": 5,
-                  "text": "online"
+                  "text": "在线"
                 },
                 "6": {
                   "color": "#E02F44",
                   "index": 6,
-                  "text": "updating"
+                  "text": "更新中"
                 },
                 "null": {
                   "index": 7,
-                  "text": "N/A"
+                  "text": "未知状态"
                 }
               },
               "type": "value"
@@ -1490,7 +1494,7 @@
       "id": 20,
       "links": [
         {
-          "title": "States",
+          "title": "状态",
           "url": "/d/xo4BNRkZz/states"
         }
       ],
@@ -1538,7 +1542,7 @@
           ]
         }
       ],
-      "title": "States",
+      "title": "状态",
       "type": "state-timeline"
     }
   ],
@@ -1701,7 +1705,7 @@
     ]
   },
   "timezone": "",
-  "title": "Overview - LFP",
+  "title": "概览 - 磷酸铁锂",
   "uid": "EVzVGnwSq",
   "version": 1,
   "weekStart": ""
